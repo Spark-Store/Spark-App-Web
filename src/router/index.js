@@ -1,22 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Mainpage from "../pages/Mainpage";
-import Programming from "../pages/Programming";
-import Themes from "../pages/Themes";
-import MusicAndSound from "../pages/MusicAndSound";
-import Games from "../pages/Games";
-import Photos from "../pages/Photos";
-import Relations from "../pages/Relations";
-import Tools from "../pages/Tools";
-import Network from "../pages/Network.vue";
-import Office from "../pages/Office.vue";
-import Others from "../pages/Others.vue";
-import Reading from "../pages/Reading.vue";
-import Videos from "../pages/Videos.vue";
-import Search from "../pages/Search.vue";
-
-
 Vue.use(Router)
 
 export default new Router({
@@ -26,72 +10,72 @@ export default new Router({
     {
       path: '/',
       name: 'MainPage',
-      component: Mainpage
+      component: () => import('../pages/Mainpage')
     },
     {
       path: '/programming',
       name: 'Programming',
-      component: Programming
+      component: () => import('../pages/Programming')
     },
     {
       path: '/themes',
       name: 'Themes',
-      component: Themes
+      component: () => import('../pages/Themes')
     },
     {
       path: '/musicandsound',
       name: 'MusicAndSound',
-      component: MusicAndSound
+      component: () => import('../pages/MusicAndSound')
     },
     {
       path: '/games',
       name: 'Games',
-      component: Games
+      component: () => import('../pages/Games')
     },
     {
       path: '/photos',
       name: 'Photos',
-      component: Photos
+      component: () => import('../pages/Photos')
     },
     {
       path: '/relations',
       name: 'Relations',
-      component: Relations
+      component: () => import('../pages/Relations')
     },
     {
       path: '/tools',
       name: 'Tools',
-      component: Tools
+      component: () => import('../pages/Tools')
     },
     {
       path: '/network',
       name: 'Network',
-      component: Network
+      component: () => import('../pages/Network')
     },
     {
       path: '/office',
       name: 'Office',
-      component: Office
+      component: () => import('../pages/Office')
     },
     {
       path: '/others',
       name: 'Others',
-      component: Others
+      component: () => import('../pages/Others')
     },
     {
       path: '/reading',
       name: 'Reading',
-      component: Reading
+      component: () => import('../pages/Reading')
     },
     {
       path: '/videos',
       name: 'Videos',
-      component :Videos
+      component: () => import('../pages/Videos')
     },
     {
       path: '/search',
       name: 'Search',
-      component :Search
+      component: () => import('../pages/Search')
     }
   ]
 })
