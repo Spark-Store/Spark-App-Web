@@ -33,18 +33,15 @@ export default {
     };
   },
   methods: {
-    getInfo() {
+    async getInfo() {
       let that=this
-      axios
-        .get(`http://dcstore.shenmo.tech/store/${that.category}/applist.json`)
-        .then(res => {
-          that.list = res.data;
-        });
+      let {data}=await axios({url:`http://dcstore.shenmo.tech/store/${that.category}/applist.json`,method:"get"})
+      that.list=data
     }
   },
-  mounted() {
+ async mounted() {
     let that=this
-    that.getInfo();
+   await that.getInfo();
   }
 };
 </script>
