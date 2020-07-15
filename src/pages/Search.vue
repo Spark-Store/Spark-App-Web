@@ -22,7 +22,8 @@
     },
     methods: {
       search() {
-        var keywords = this.searchInput.split(" ");
+        let that=this
+        var keywords = that.searchInput.split(" ");
 
       },
       getJsonList() {

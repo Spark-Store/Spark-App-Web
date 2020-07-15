@@ -34,15 +34,17 @@ export default {
   },
   methods: {
     getInfo() {
+      let that=this
       axios
-        .get(`http://dcstore.shenmo.tech/store/${this.category}/applist.json`)
+        .get(`http://dcstore.shenmo.tech/store/${that.category}/applist.json`)
         .then(res => {
-          this.list = res.data;
+          that.list = res.data;
         });
     }
   },
   mounted() {
-    this.getInfo();
+    let that=this
+    that.getInfo();
   }
 };
 </script>
