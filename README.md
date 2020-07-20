@@ -82,7 +82,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 > video -> Videos
 
 
-### 注：本产品需要配合存储库: https://gitee.com/deepin-community-store/deepin-community-store 使用！
+### 注：本产品需要配合存储库: https://gitee.com/deepin-community-store/spark-store 使用！
 
 #### by Spark Store Development Team.
 
