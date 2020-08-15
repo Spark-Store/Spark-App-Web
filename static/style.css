@@ -91,6 +91,7 @@
   text-align: left;
   font-weight: lighter;
   display:block;
+  margin: 15px;
   overflow:hidden;
   word-break:keep-all;
   white-space:nowrap;
